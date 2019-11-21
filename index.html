@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script   src="https://code.jquery.com/jquery-3.4.1.js"   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="   crossorigin="anonymous"></script>
+    <title>Document</title>
+    
+    
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <nav>
+            <div class="emblem"><h3 class="logomedia"><a href="#" class="home_link">KV</a></h3><h4 class="logomedia">PORTFOLIO</h4><h3 class="logo_1"><a href="#" class="home_link">KV ONLINE PORTFOLIO</a></h3><h5 class="logo_text">Every journey begins somewhere</h5></div>
+
+            <ul class="options">
+                <li class="show_hide"><a href="#about_me">About me</a></li>
+                <li class="show_hide"><a href="#portfolio">Portfolio</a></li>
+                <li class="show_hide"><a href="#contact_me">Contact me</a></li>
+            </ul>
+            <!-- <div class="toogle_menu"><img src="images/toogle.png" alt=""></div> -->
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+    <div class="carousel_container">
+        <button class="carousel_button carousel_left hide_button">
+            <img src="images/bacward.png" alt="">
+        </button>
+        <div class="carousel">
+            <ul class="carousel_items">
+                <li class="carousel_slide current_slide">
+                    <a href="#about_me"><img  class="carousel_image" src="images/me3.png" alt="about me picture"></a>
+                </li>
+                <li class="carousel_slide">
+                    <a href="#portfolio"><img  class="carousel_image" src="images/portfolio.jpg" alt="matrix code picture"></a>
+                </li>
+                <li class="carousel_slide">
+                    <a href="#contact_me"><img  class="carousel_image" src="images/contactme.jpg" alt="paper with contact me  text"></a>
+                </li>
+            </ul>
+        </div>
+        <button class="carousel_button carousel_right hide_button">
+            <img src="images/forward.png" alt="">
+        </button>
+        <div class="carousel_nav">
+            <button class="index_carousel current_slide"></button>
+            <button class="index_carousel"></button>
+            <button class="index_carousel"></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="about_me" id="about_me">
+            <h2 class="title extraspace">About me</h2>
+            <div class="aboutme_wrapper"><img src="images/me.jpg" alt="it's a picture of me" class="self_picture">
+            <p class="describtion">Hey everybody. My name is Kristóf Vörösváczki. I know, my family name is unpronounceable for the most people around the world. Even in Hungary people don´t know how to pronounce that correctly. So you can just call me Kristof. 
+             I´ve started my studies in Front end Developing exactly two months ago. Before that I had almost zero knowledge in this field. And this is my 3rd webpage ever.  </p>
+            </div>
+        </div>
+        <div class="portfolio" id="portfolio">
+            <h2 class="title">Portfolio</h2>
+            <div class="projects">
+                <div class="project_1">
+                    
+                    <img src="images/project.png" alt="first project">
+                    <div class="info">
+                            <h4>Apple project</h4>
+                            <p class="describtion_portfolio">It was our first project with a fellow student, together. Learn more <a href="https://github.com/krstf456?tab=repositories" class="link">here</a>.</p>
+                    </div>
+                </div>
+                <div class="project_1">
+                        
+                        <img src="images/project2.png" alt="second project">
+                        <div class="info">
+                                <h4>Norvegian "ebay"</h4>
+                                <p class="describtion_portfolio">In this projekt we worked in the same group and we had to redesign a site. Learn more <a href="https://github.com/krstf456?tab=repositories" class="link">here</a>.</p>
+                        </div>
+                </div>
+            </div>
+            <li>
+                <h4 class="languages">HTML5</h4><span class="progress"><span class="html"></span></span>
+            </li>
+            <li>
+                <h4 class="languages">CSS</h4><span class="progress"><span class="css"></span></span>
+            </li>
+            <li>
+                <h4 class="languages">JavaScript</h4><span class="progress"><span class="js"></span></span>
+            </li>
+            <li>
+                <h4 class="languages">JQuery</h4><span class="progress"><span class="jquery"></span></span>
+            </li>
+            <li>
+                <h4 class="languages">Canvas</h4><span class="progress"><span class="canvas"></span></span>
+            </li>
+        </div>
+        <div class="contact_me" id="contact_me">
+            <H2 class="title">Contact me</H2>
+            <form action="" name="contactme" action="https://formspree.io/krstf456@gmail.com"
+            method="POST">
+                <label for="name">
+                    Name
+                    <input type="text" class="name" placeholder="Bob Dylan">
+                 </label>
+                
+                <label for="subject">
+                    Subject
+                    <input type="text" class="subject" placeholder="Intership">
+                </label>
+                <label>
+                        Email
+                        <input type="email" class="email" placeholder="bob@dylan.com">
+                    </label>
+                <!-- <label for="phone">
+                    Phone
+                    <input type="text" class="phone" placeholder="00704534125">
+                </label> -->
+                <label for="message">
+                    Message
+                    <textarea name="" class="message" cols="150" rows="10" placeholder="Type your message here.."></textarea>
+                </label>
+                <div class="info_msg"></div>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p class="all_rights_reserved">All rights reserved Ⓡ</p>
+        
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="nav.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
